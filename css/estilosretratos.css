@@ -1,0 +1,163 @@
+body {
+
+  font-family: Dancing Script;
+  background-color: #02010a;
+}
+
+/*encabezado de la pag*/
+
+.menuprincipal {
+
+background-color:  #5b7989;
+border-radius: 10px 10px 0px 0px;
+color: white;
+font-size: 30px;
+display:flex;
+}
+
+#titulo {
+  margin: auto;
+  display: flex;
+  text-shadow: 2px 2px #02010a;
+}
+
+#navegador, a {
+  margin: auto;
+  text-align: right;
+  color:white;
+  text-decoration: none;
+  display:flex;
+}
+#navegador:hover {
+  text-decoration: underline;
+}
+
+/*cuerpo de la pag */
+#cuerpo {
+  display: flex;
+  background-color: #82c3a6;
+
+}
+
+aside {
+
+  margin:4px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(50px);
+
+}
+
+.img1{
+  width: 70%;
+  transform: rotate(90deg);
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+
+.img2 {
+  width: 60%;
+  transform:
+    rotate(180deg)
+   translateY(-50px);
+   -webkit-filter:grayscale(100%);
+   filter: grayscale(100%);
+}
+
+section {
+  margin: 4px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.img3 {
+  margin-top: 10px;
+  width: 60%;
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+.img4{
+  margin-top: 4px;
+  width: 60%;
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+aside {
+
+    margin: 4px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img5 {
+  margin-top: 4px;
+  width: 70%;
+  transform:translateY(-40px);
+}
+
+.img6 {
+  margin-top: 4px;
+  width: 60%;
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+  transform:translateY(-40px);
+}
+
+/*pie de pagina */
+
+footer {
+
+  background-color: #C6d5c5;
+  display: flex;
+  margin: 0px auto;
+  border-radius: 0px 0px 10px 10px;
+  vertical-align: super;
+}
+
+#columna1, #columna2, #columna3, #columna4 {
+
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+  margin-left: 12%;
+  margin-right: auto;
+}
+
+#copy {
+  width: 3%;
+  display: flex;
+}
+
+
+
+@media (max-width: 900px){
+
+.menuprincipal {
+  display: flex;
+  flex-direction: column;
+}
+
+#titulo {
+  order: 1;
+}
+
+#navegador {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+#cuerpo,  aside, section{
+flex-direction: column;
+width: 100%;
+}
+
+footer{
+flex-direction: column;
+}
+}

@@ -1,0 +1,128 @@
+body {
+
+  font-family: Dancing Script;
+  background-color: #02010a;
+}
+
+/*encabezado de la pag*/
+
+.menuprincipal {
+
+background-color:  #5b7989;
+border-radius: 10px 10px 0px 0px;
+color: white;
+font-size: 30px;
+display:flex;
+}
+
+#titulo {
+  margin: auto;
+  display: flex;
+  text-shadow: 2px 2px #02010a;
+}
+
+#navegador, a {
+  margin: auto;
+  text-align: right;
+  color:white;
+  text-decoration: none;
+  display:flex;
+}
+#navegador:hover {
+  text-decoration: underline;
+}
+
+
+/* parte cuerpo de la pag */
+
+#imagencentral {
+  width: 100%;
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+.imagenessecundarias {
+  width: auto;
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+}
+#bloque1 {
+  width: 80%;
+  text-align: center;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  margin:6px;
+}
+#s1 {
+  margin: auto;
+  width: 90%;
+  border: 2px solid black;
+  box-shadow: 4px 4px #82c3a6;
+}
+#bloque2{
+  text-align: center;
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+}
+#s2 {
+  margin-right: 6;
+  width: 50%;
+  box-shadow: 4px 4px #82c3a6;
+  border: 2px solid black;
+}
+
+
+/*pie de pagina */
+
+footer {
+
+  background-color: #C6d5c5;
+  display: flex;
+  margin: 0px auto;
+  border-radius: 0px 0px 10px 10px;
+  vertical-align: super;
+}
+
+#columna1, #columna2, #columna3, #columna4 {
+
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+  margin-left: 12%;
+  margin-right: auto;
+}
+
+#copy {
+  width: 3%;
+  display: flex;
+}
+
+@media (max-width: 900px){
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titulo {
+    order: 1;
+  }
+
+  #navegador {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+  }
+  
+.imagenessecundarias{
+flex-direction: column;
+width: 100%;
+}
+footer{
+flex-direction: column;
+}
+}
